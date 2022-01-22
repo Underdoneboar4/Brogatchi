@@ -72,8 +72,8 @@
                                     <action selector="GymButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fSO-OV-buR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red Bro Idle 1" translatesAutoresizingMaskIntoConstraints="NO" id="tHI-sT-WuB">
-                                <rect key="frame" x="92" y="205" width="230" height="202"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obabo.png" translatesAutoresizingMaskIntoConstraints="NO" id="tHI-sT-WuB">
+                                <rect key="frame" x="-101" y="137" width="617" height="393"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -94,7 +94,7 @@
         <image name="Button 2" width="32" height="32"/>
         <image name="Button 3" width="32" height="32"/>
         <image name="Button 4" width="32" height="32"/>
-        <image name="Red Bro Idle 1" width="64" height="64"/>
+        <image name="obabo.png" width="64" height="64"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

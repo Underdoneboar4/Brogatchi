@@ -16,6 +16,8 @@
 		414F4024279C8E3C00CD810B /* BrogatachiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4023279C8E3C00CD810B /* BrogatachiTests.swift */; };
 		414F402E279C8E3C00CD810B /* BrogatachiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F402D279C8E3C00CD810B /* BrogatachiUITests.swift */; };
 		414F4030279C8E3C00CD810B /* BrogatachiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F402F279C8E3C00CD810B /* BrogatachiUITestsLaunchTests.swift */; };
+		4167ACB9279CB460000CDC0E /* piwefhipfhwe.png in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACB8279CB460000CDC0E /* piwefhipfhwe.png */; };
+		4167ACBB279CB491000CDC0E /* obabo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACBA279CB491000CDC0E /* obabo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		414F4029279C8E3C00CD810B /* BrogatachiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrogatachiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		414F402D279C8E3C00CD810B /* BrogatachiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrogatachiUITests.swift; sourceTree = "<group>"; };
 		414F402F279C8E3C00CD810B /* BrogatachiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrogatachiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4167ACB8279CB460000CDC0E /* piwefhipfhwe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piwefhipfhwe.png; sourceTree = "<group>"; };
+		4167ACBA279CB491000CDC0E /* obabo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obabo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 			children = (
 				414F402D279C8E3C00CD810B /* BrogatachiUITests.swift */,
 				414F402F279C8E3C00CD810B /* BrogatachiUITestsLaunchTests.swift */,
+				4167ACB8279CB460000CDC0E /* piwefhipfhwe.png */,
+				4167ACBA279CB491000CDC0E /* obabo.png */,
 			);
 			path = BrogatachiUITests;
 			sourceTree = "<group>";
@@ -248,6 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4167ACB9279CB460000CDC0E /* piwefhipfhwe.png in Resources */,
+				4167ACBB279CB491000CDC0E /* obabo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

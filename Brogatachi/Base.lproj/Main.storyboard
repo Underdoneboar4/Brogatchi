@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,49 +24,56 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8ho-KP-Uyi">
-                                <rect key="frame" x="61" y="721" width="293" height="31"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUH-PZ-7Rs">
-                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="31"/>
-                                        <color key="backgroundColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Home"/>
-                                        <connections>
-                                            <action selector="HomeButtomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DyP-OT-AxL"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOL-Cf-W91">
-                                        <rect key="frame" x="74.5" y="0.0" width="69.5" height="31"/>
-                                        <color key="backgroundColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Gym"/>
-                                        <connections>
-                                            <action selector="GymButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fSO-OV-buR"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEs-9A-bgF">
-                                        <rect key="frame" x="149" y="0.0" width="69.5" height="31"/>
-                                        <color key="backgroundColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Food"/>
-                                        <connections>
-                                            <action selector="FoodButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FX4-J9-lye"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOk-P5-adP">
-                                        <rect key="frame" x="223.5" y="0.0" width="69.5" height="31"/>
-                                        <color key="backgroundColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Library"/>
-                                        <connections>
-                                            <action selector="LibraryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIf-TQ-AOO"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tHI-sT-WuB">
-                                <rect key="frame" x="87" y="350" width="240" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUH-PZ-7Rs">
+                                <rect key="frame" x="20" y="699" width="120" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" image="Button 1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HomeButtomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DyP-OT-AxL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEs-9A-bgF">
+                                <rect key="frame" x="58" y="606" width="77" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" image="Button 2"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="FoodButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FX4-J9-lye"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOk-P5-adP">
+                                <rect key="frame" x="243" y="735" width="108" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" image="Button 4"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="LibraryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIf-TQ-AOO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOL-Cf-W91">
+                                <rect key="frame" x="227" y="571" width="90" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" image="Button 3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="GymButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fSO-OV-buR"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red Bro Idle 1" translatesAutoresizingMaskIntoConstraints="NO" id="tHI-sT-WuB">
+                                <rect key="frame" x="92" y="205" width="230" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -82,6 +90,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Button 1" width="32" height="32"/>
+        <image name="Button 2" width="32" height="32"/>
+        <image name="Button 3" width="32" height="32"/>
+        <image name="Button 4" width="32" height="32"/>
+        <image name="Red Bro Idle 1" width="64" height="64"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

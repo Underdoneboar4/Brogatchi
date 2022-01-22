@@ -31,24 +31,36 @@
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Home"/>
+                                        <connections>
+                                            <action selector="HomeButtomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DyP-OT-AxL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOL-Cf-W91">
                                         <rect key="frame" x="74.5" y="0.0" width="69.5" height="31"/>
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Gym"/>
+                                        <connections>
+                                            <action selector="GymButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fSO-OV-buR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEs-9A-bgF">
                                         <rect key="frame" x="149" y="0.0" width="69.5" height="31"/>
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Food"/>
+                                        <connections>
+                                            <action selector="FoodButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FX4-J9-lye"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOk-P5-adP">
                                         <rect key="frame" x="223.5" y="0.0" width="69.5" height="31"/>
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Library"/>
+                                        <connections>
+                                            <action selector="LibraryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIf-TQ-AOO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -60,6 +72,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="MainImage" destination="tHI-sT-WuB" id="vnf-pI-H4t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

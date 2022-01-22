@@ -1,13 +1,15 @@
 //
-//  ViewController.swift
+//  View Controller2.swift
 //  Brogatachi
 //
-//  Created by Blake Branvold on 1/22/22.
+//  Created by Ryan Thomas on 1/22/22.
 //
+
+import Foundation
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController2: UIViewController {
 
     @IBOutlet weak var MainImage: UIImageView!
     
@@ -17,7 +19,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func HomeButtomPressed(_ sender: Any) {
-        
     }
     @IBAction func GymButtonPressed(_ sender: Any) {
     }
@@ -27,4 +28,3 @@ class ViewController: UIViewController {
     @IBAction func LibraryButtonPressed(_ sender: Any) {
     }
 }
-

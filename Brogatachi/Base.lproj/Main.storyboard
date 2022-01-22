@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUH-PZ-7Rs">
-                                <rect key="frame" x="20" y="699" width="120" height="100"/>
+                                <rect key="frame" x="43" y="700" width="120" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
@@ -46,22 +46,11 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="FoodButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FX4-J9-lye"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOk-P5-adP">
-                                <rect key="frame" x="243" y="735" width="108" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="">
-                                    <backgroundConfiguration key="background" image="Button 4"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="LibraryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIf-TQ-AOO"/>
+                                    <segue destination="dgi-6e-6MS" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="wUL-El-4aG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOL-Cf-W91">
-                                <rect key="frame" x="227" y="571" width="90" height="60"/>
+                                <rect key="frame" x="227" y="582" width="90" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
@@ -76,10 +65,23 @@
                                 <rect key="frame" x="-101" y="137" width="617" height="393"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOk-P5-adP">
+                                <rect key="frame" x="227" y="715" width="108" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" image="Button 4"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="LibraryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIf-TQ-AOO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ey9-Yn-YV9"/>
                     <connections>
                         <outlet property="MainImage" destination="tHI-sT-WuB" id="vnf-pI-H4t"/>
                     </connections>
@@ -87,6 +89,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gtd-jV-8kC">
+            <objects>
+                <viewController id="dgi-6e-6MS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sEs-ht-Ndk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2d-WI-ddf">
+                                <rect key="frame" x="174" y="282" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="bbi-rE-YsS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="44q-MD-5QT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IFK-ck-9jK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oAV-pm-gth" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000" y="98"/>
         </scene>
     </scenes>
     <resources>

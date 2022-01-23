@@ -11,19 +11,35 @@ import AVFoundation
 class ViewController: UIViewController {
 
     @IBOutlet weak var MainImage: UIImageView!
-    
+    var shifter = 0
     var player: AVAudioPlayer?
+    var timer = Timer()
     
+    var characterColor = "Red"
+    var backgroundImage = "Home"
+    
+    @IBOutlet weak var Character: UIImageView!
+    @IBOutlet weak var Background: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
         playSound(a: "song1")
         
         
         
     }
     
-
+    //new function
+    @objc func timerAction(){
+            if(shifter == 0 && backgroundImage == "Home"){
+                shifter = 1
+                Character.image = UIImage(named:characterColor + " Bro Idle 2")
+            } else if(backgroundImage == "Home"){
+                shifter = 0
+                Character.image = UIImage(named:characterColor + " Bro Idle 2")
+            }
+        }
 
     func playSound(a: String) {
         guard let url = Bundle.main.url(forResource: a, withExtension: "wav") else { return }
@@ -51,12 +67,17 @@ class ViewController: UIViewController {
     
 
     @IBAction func HomeButtomPressed(_ sender: Any) {
-        
+        backgroundImage = "Home"
+        Background.image = UIImage(named:"Home Background")
     }
     @IBAction func GymButtonPressed(_ sender: Any) {
+        backgroundImage = "Gym"
+        Background.image = UIImage(named:"Gym Background")
     }
     
     @IBAction func FoodButtonPressed(_ sender: Any) {
+        backgroundImage = "Kitchen"
+        Background.image = UIImage(named:"Kitchen Background")
     }
     @IBAction func LibraryButtonPressed(_ sender: Any) {
     }

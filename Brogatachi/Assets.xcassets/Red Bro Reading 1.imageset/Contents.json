@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Red Bro Idle 1.png",
+      "filename" : "Red Bro Reading 1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Red Bro Idle 1-2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Red Bro Idle 1-1.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

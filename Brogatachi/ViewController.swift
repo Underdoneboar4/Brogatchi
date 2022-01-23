@@ -12,17 +12,19 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var MainImage: UIImageView!
     
+    var player: AVAudioPlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        player!.numberOfLoops = -1
         playSound(a: "song1")
         
         
         
     }
     
-    
-    var player: AVAudioPlayer?
+
 
     func playSound(a: String) {
         guard let url = Bundle.main.url(forResource: a, withExtension: "wav") else { return }

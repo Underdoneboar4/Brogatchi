@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AF80315279CB9A600DA2AF0 /* View Controller2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF80314279CB9A600DA2AF0 /* View Controller2.swift */; };
 		414F400D279C8E3B00CD810B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F400C279C8E3B00CD810B /* AppDelegate.swift */; };
 		414F400F279C8E3B00CD810B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F400E279C8E3B00CD810B /* SceneDelegate.swift */; };
 		414F4011279C8E3B00CD810B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F4010279C8E3B00CD810B /* ViewController.swift */; };
@@ -31,9 +30,9 @@
 		4167ACD9279CDCF0000CDC0E /* tapShort.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD8279CDCEF000CDC0E /* tapShort.wav */; };
 		4167ACDA279CDCF0000CDC0E /* tapShort.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD8279CDCEF000CDC0E /* tapShort.wav */; };
 		4167ACDB279CDCF0000CDC0E /* tapShort.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD8279CDCEF000CDC0E /* tapShort.wav */; };
-		4167ACDD279CDFEA000CDC0E /* Sound_MainLoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACDC279CDFEA000CDC0E /* Sound_MainLoop.wav */; };
-		4167ACDE279CDFEA000CDC0E /* Sound_MainLoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACDC279CDFEA000CDC0E /* Sound_MainLoop.wav */; };
-		4167ACDF279CDFEA000CDC0E /* Sound_MainLoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACDC279CDFEA000CDC0E /* Sound_MainLoop.wav */; };
+		4167ACDD279CDFEA000CDC0E /* mainLoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACDC279CDFEA000CDC0E /* mainLoop.wav */; };
+		4167ACDE279CDFEA000CDC0E /* mainLoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACDC279CDFEA000CDC0E /* mainLoop.wav */; };
+		4167ACDF279CDFEA000CDC0E /* mainLoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACDC279CDFEA000CDC0E /* mainLoop.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AF80314279CB9A600DA2AF0 /* View Controller2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View Controller2.swift"; sourceTree = "<group>"; };
 		414F4009279C8E3B00CD810B /* Brogatachi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brogatachi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		414F400C279C8E3B00CD810B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		414F400E279C8E3B00CD810B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +72,7 @@
 		4167ACD0279CDB18000CDC0E /* crack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crack.wav; sourceTree = "<group>"; };
 		4167ACD4279CDBEA000CDC0E /* tap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tap.wav; sourceTree = "<group>"; };
 		4167ACD8279CDCEF000CDC0E /* tapShort.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tapShort.wav; sourceTree = "<group>"; };
-		4167ACDC279CDFEA000CDC0E /* Sound_MainLoop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound_MainLoop.wav; sourceTree = "<group>"; };
+		4167ACDC279CDFEA000CDC0E /* mainLoop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mainLoop.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +126,6 @@
 				414F400C279C8E3B00CD810B /* AppDelegate.swift */,
 				414F400E279C8E3B00CD810B /* SceneDelegate.swift */,
 				414F4010279C8E3B00CD810B /* ViewController.swift */,
-				0AF80314279CB9A600DA2AF0 /* View Controller2.swift */,
 				414F4012279C8E3B00CD810B /* Main.storyboard */,
 				414F4015279C8E3C00CD810B /* Assets.xcassets */,
 				414F4017279C8E3C00CD810B /* LaunchScreen.storyboard */,
@@ -136,7 +133,7 @@
 				4167ACD0279CDB18000CDC0E /* crack.wav */,
 				4167ACD4279CDBEA000CDC0E /* tap.wav */,
 				4167ACD8279CDCEF000CDC0E /* tapShort.wav */,
-				4167ACDC279CDFEA000CDC0E /* Sound_MainLoop.wav */,
+				4167ACDC279CDFEA000CDC0E /* mainLoop.wav */,
 				414F401A279C8E3C00CD810B /* Info.plist */,
 			);
 			path = Brogatachi;
@@ -270,7 +267,7 @@
 				4167ACCD279CDB00000CDC0E /* song1.wav in Resources */,
 				4167ACD1279CDB18000CDC0E /* crack.wav in Resources */,
 				414F4016279C8E3C00CD810B /* Assets.xcassets in Resources */,
-				4167ACDD279CDFEA000CDC0E /* Sound_MainLoop.wav in Resources */,
+				4167ACDD279CDFEA000CDC0E /* mainLoop.wav in Resources */,
 				4167ACD9279CDCF0000CDC0E /* tapShort.wav in Resources */,
 				414F4014279C8E3B00CD810B /* Main.storyboard in Resources */,
 			);
@@ -281,7 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4167ACD6279CDBEA000CDC0E /* tap.wav in Resources */,
-				4167ACDE279CDFEA000CDC0E /* Sound_MainLoop.wav in Resources */,
+				4167ACDE279CDFEA000CDC0E /* mainLoop.wav in Resources */,
 				4167ACDA279CDCF0000CDC0E /* tapShort.wav in Resources */,
 				4167ACCE279CDB00000CDC0E /* song1.wav in Resources */,
 				4167ACD2279CDB18000CDC0E /* crack.wav in Resources */,
@@ -296,7 +293,7 @@
 				4167ACD3279CDB18000CDC0E /* crack.wav in Resources */,
 				4167ACCF279CDB00000CDC0E /* song1.wav in Resources */,
 				4167ACBB279CB491000CDC0E /* obabo.png in Resources */,
-				4167ACDF279CDFEA000CDC0E /* Sound_MainLoop.wav in Resources */,
+				4167ACDF279CDFEA000CDC0E /* mainLoop.wav in Resources */,
 				4167ACD7279CDBEA000CDC0E /* tap.wav in Resources */,
 				4167ACDB279CDCF0000CDC0E /* tapShort.wav in Resources */,
 			);
@@ -311,7 +308,6 @@
 			files = (
 				414F4011279C8E3B00CD810B /* ViewController.swift in Sources */,
 				414F400D279C8E3B00CD810B /* AppDelegate.swift in Sources */,
-				0AF80315279CB9A600DA2AF0 /* View Controller2.swift in Sources */,
 				414F400F279C8E3B00CD810B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -114,8 +114,7 @@ class ViewController: UIViewController {
             tapShift()
         }
     }
-    
-    
+        
     func eggToNorm(){
         FoodButton.alpha = 1
         BookButton.alpha = 1
@@ -127,19 +126,16 @@ class ViewController: UIViewController {
         backgroundImage = "Home"
         Background.image = UIImage(named:"Home Background")
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
-        //player?.stop()
         backgroundPlayer?.stop()
-        //playSound(file: "mainLoop")
         playBackgroundMusic(filenamed: "mainLoop")
         
     }
-    
-    
+        
     @objc func timerAction(){
         
         if(timeShifter == 0){
             let combinedStats = gymStat + bookStat + foodStat + restStat
-            let happinessLevel = round((combinedStats*100)/400)
+            let happinessLevel = round((combinedStats*1000)/400)/10
             TipLabel.text = "Happiness : " + String(happinessLevel) + "%"
         }
         
@@ -152,7 +148,7 @@ class ViewController: UIViewController {
                 Character.image = UIImage(named:characterColor + " Bro Idle 1")
             }
             
-            restStat += 1
+            restStat += 0.75
             gymStat -= 0.01
             foodStat -= 0.01
             bookStat -= 0.01
@@ -236,11 +232,7 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
 
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
             effectPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-
-            /* iOS 10 and earlier require the following line:
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 
             guard let effectPlayer = effectPlayer else { return }
 

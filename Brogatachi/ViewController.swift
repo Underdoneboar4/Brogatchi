@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var BlueEggButton: UIButton!
     @IBOutlet weak var RedEggButton: UIButton!
     @IBOutlet weak var YellowEggButton: UIButton!
-    @IBOutlet weak var HatchTipLabel: UILabel!
+    @IBOutlet weak var TipLabel: UILabel!
     
     @IBOutlet weak var FoodButton: UIButton!
     @IBOutlet weak var BookButton: UIButton!
@@ -27,10 +27,10 @@ class ViewController: UIViewController {
     var timeShifter = 0
     var tapShifter = 1
     
-    var gymStat = 0.0
-    var bookStat = 0.0
-    var foodStat = 0.0
-    var restStat = 0.0
+    var gymStat = 60.0
+    var bookStat = 60.0
+    var foodStat = 60.0
+    var restStat = 60.0
     
     var backgroundPlayer: AVAudioPlayer?
     var effectPlayer: AVAudioPlayer?
@@ -74,7 +74,7 @@ class ViewController: UIViewController {
     func eggCracking(color: String){
         characterColor = color
         isEgging = true
-        HatchTipLabel.isHidden = false
+        TipLabel.isHidden = false
         BlueEggButton.isHidden = true
         RedEggButton.isHidden = true
         YellowEggButton.isHidden = true
@@ -123,7 +123,6 @@ class ViewController: UIViewController {
         HomeButton.alpha = 1
         isEgging = false
         canChangeLocation = true
-        HatchTipLabel.isHidden = true
         Character.image = UIImage(named:characterColor + " Bro Idle 1")
         backgroundImage = "Home"
         Background.image = UIImage(named:"Home Background")
@@ -138,6 +137,11 @@ class ViewController: UIViewController {
     
     @objc func timerAction(){
         
+        if(timeShifter == 0){
+            let combinedStats = gymStat + bookStat + foodStat + restStat
+            let happinessLevel = round((combinedStats*100)/400)
+            TipLabel.text = "Happiness : " + String(happinessLevel) + "%"
+        }
         
         if(backgroundImage == "Home"){
             if(timeShifter == 0){
@@ -149,9 +153,9 @@ class ViewController: UIViewController {
             }
             
             restStat += 1
-            gymStat -= 0.1
-            foodStat -= 0.1
-            bookStat -= 0.1
+            gymStat -= 0.01
+            foodStat -= 0.01
+            bookStat -= 0.01
             
             if(restStat > 100){
                 restStat = 100
@@ -173,30 +177,30 @@ class ViewController: UIViewController {
             restStat += 0.1
             
         } else if(backgroundImage == "Gym"){
-            gymStat += 2
-            foodStat -= 0.4
-            bookStat -= 0.75
-            restStat -= 0.25
+            gymStat += 1
+            foodStat -= 0.04
+            bookStat -= 0.075
+            restStat -= 0.025
             if(gymStat > 100){
                 gymStat = 100
             }
             Character.image = UIImage(named:characterColor + " Bro Lifting " + String(tapShifter))
             
         } else if(backgroundImage == "Kitchen"){
-            gymStat -= 0.75
-            foodStat += 1.5
-            bookStat -= 0.75
-            restStat -= 0.25
+            gymStat -= 0.075
+            foodStat += 0.75
+            bookStat -= 0.075
+            restStat -= 0.025
             if(foodStat > 100){
                 foodStat = 100
             }
             Character.image = UIImage(named:characterColor + " Bro Eating " + String(tapShifter))
             
         } else if (backgroundImage == "Library"){
-            gymStat -= 0.75
-            foodStat -= 0.4
-            bookStat += 3
-            restStat -= 0.25
+            gymStat -= 0.075
+            foodStat -= 0.04
+            bookStat += 0.75
+            restStat -= 0.025
             if(bookStat > 100){
                 bookStat = 100
             }

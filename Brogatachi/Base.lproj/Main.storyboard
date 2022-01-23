@@ -134,10 +134,10 @@
                         <outlet property="Character" destination="tHI-sT-WuB" id="Ue4-N4-oz5"/>
                         <outlet property="FoodButton" destination="pEs-9A-bgF" id="rud-Se-WKS"/>
                         <outlet property="GymButton" destination="MOL-Cf-W91" id="NP4-Tl-Nzm"/>
-                        <outlet property="HatchTipLabel" destination="seE-Et-yOp" id="jdK-Mg-y2B"/>
                         <outlet property="HomeButton" destination="BUH-PZ-7Rs" id="lyV-zf-2Ka"/>
                         <outlet property="MainImage" destination="tHI-sT-WuB" id="vnf-pI-H4t"/>
                         <outlet property="RedEggButton" destination="JGp-tr-0Ot" id="jDV-E4-hut"/>
+                        <outlet property="TipLabel" destination="seE-Et-yOp" id="H24-yu-KJX"/>
                         <outlet property="YellowEggButton" destination="UuC-bL-9Qw" id="fie-bL-yvb"/>
                     </connections>
                 </viewController>

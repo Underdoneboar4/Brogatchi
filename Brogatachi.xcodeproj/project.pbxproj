@@ -31,9 +31,9 @@
 		4167ACD9279CDCF0000CDC0E /* tapShort.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD8279CDCEF000CDC0E /* tapShort.wav */; };
 		4167ACDA279CDCF0000CDC0E /* tapShort.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD8279CDCEF000CDC0E /* tapShort.wav */; };
 		4167ACDB279CDCF0000CDC0E /* tapShort.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD8279CDCEF000CDC0E /* tapShort.wav */; };
-		4167ACDD279CDFEA000CDC0E /* Sound_MainLoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACDC279CDFEA000CDC0E /* Sound_MainLoop.wav */; };
-		4167ACDE279CDFEA000CDC0E /* Sound_MainLoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACDC279CDFEA000CDC0E /* Sound_MainLoop.wav */; };
-		4167ACDF279CDFEA000CDC0E /* Sound_MainLoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACDC279CDFEA000CDC0E /* Sound_MainLoop.wav */; };
+		4167ACDD279CDFEA000CDC0E /* mainLoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACDC279CDFEA000CDC0E /* mainLoop.wav */; };
+		4167ACDE279CDFEA000CDC0E /* mainLoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACDC279CDFEA000CDC0E /* mainLoop.wav */; };
+		4167ACDF279CDFEA000CDC0E /* mainLoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACDC279CDFEA000CDC0E /* mainLoop.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +74,7 @@
 		4167ACD0279CDB18000CDC0E /* crack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crack.wav; sourceTree = "<group>"; };
 		4167ACD4279CDBEA000CDC0E /* tap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tap.wav; sourceTree = "<group>"; };
 		4167ACD8279CDCEF000CDC0E /* tapShort.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tapShort.wav; sourceTree = "<group>"; };
-		4167ACDC279CDFEA000CDC0E /* Sound_MainLoop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound_MainLoop.wav; sourceTree = "<group>"; };
+		4167ACDC279CDFEA000CDC0E /* mainLoop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mainLoop.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +136,7 @@
 				4167ACD0279CDB18000CDC0E /* crack.wav */,
 				4167ACD4279CDBEA000CDC0E /* tap.wav */,
 				4167ACD8279CDCEF000CDC0E /* tapShort.wav */,
-				4167ACDC279CDFEA000CDC0E /* Sound_MainLoop.wav */,
+				4167ACDC279CDFEA000CDC0E /* mainLoop.wav */,
 				414F401A279C8E3C00CD810B /* Info.plist */,
 			);
 			path = Brogatachi;
@@ -270,7 +270,7 @@
 				4167ACCD279CDB00000CDC0E /* song1.wav in Resources */,
 				4167ACD1279CDB18000CDC0E /* crack.wav in Resources */,
 				414F4016279C8E3C00CD810B /* Assets.xcassets in Resources */,
-				4167ACDD279CDFEA000CDC0E /* Sound_MainLoop.wav in Resources */,
+				4167ACDD279CDFEA000CDC0E /* mainLoop.wav in Resources */,
 				4167ACD9279CDCF0000CDC0E /* tapShort.wav in Resources */,
 				414F4014279C8E3B00CD810B /* Main.storyboard in Resources */,
 			);
@@ -281,7 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4167ACD6279CDBEA000CDC0E /* tap.wav in Resources */,
-				4167ACDE279CDFEA000CDC0E /* Sound_MainLoop.wav in Resources */,
+				4167ACDE279CDFEA000CDC0E /* mainLoop.wav in Resources */,
 				4167ACDA279CDCF0000CDC0E /* tapShort.wav in Resources */,
 				4167ACCE279CDB00000CDC0E /* song1.wav in Resources */,
 				4167ACD2279CDB18000CDC0E /* crack.wav in Resources */,
@@ -296,7 +296,7 @@
 				4167ACD3279CDB18000CDC0E /* crack.wav in Resources */,
 				4167ACCF279CDB00000CDC0E /* song1.wav in Resources */,
 				4167ACBB279CB491000CDC0E /* obabo.png in Resources */,
-				4167ACDF279CDFEA000CDC0E /* Sound_MainLoop.wav in Resources */,
+				4167ACDF279CDFEA000CDC0E /* mainLoop.wav in Resources */,
 				4167ACD7279CDBEA000CDC0E /* tap.wav in Resources */,
 				4167ACDB279CDCF0000CDC0E /* tapShort.wav in Resources */,
 			);

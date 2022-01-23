@@ -16,18 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home Background" translatesAutoresizingMaskIntoConstraints="NO" id="9yA-Fu-zar">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brogatchi Background" translatesAutoresizingMaskIntoConstraints="NO" id="9yA-Fu-zar">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BROGOTACHI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQM-dL-GFC">
-                                <rect key="frame" x="70" y="99" width="274" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUH-PZ-7Rs">
                                 <rect key="frame" x="152" y="642" width="110" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
@@ -73,8 +66,45 @@
                                     <action selector="LibraryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIf-TQ-AOO"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red Bro Idle 1" translatesAutoresizingMaskIntoConstraints="NO" id="tHI-sT-WuB">
-                                <rect key="frame" x="29" y="353" width="357" height="191"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGp-tr-0Ot">
+                                <rect key="frame" x="116" y="327" width="182" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="Red Egg 1" imageContentMode="scaleAspectFit"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="RedEggPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hOI-it-7Vl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gy1-7t-gWR">
+                                <rect key="frame" x="116" y="217" width="182" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="Blue Egg 1" imageContentMode="scaleAspectFit"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="BlueEggPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mvL-MH-wsH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UuC-bL-9Qw">
+                                <rect key="frame" x="116" y="469" width="182" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="Yellow Egg 1" imageContentMode="scaleAspectFit"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="YellowEggPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pyK-yM-Mib"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brogatchi Logo" translatesAutoresizingMaskIntoConstraints="NO" id="syR-n0-IBT">
+                                <rect key="frame" x="33" y="44" width="349" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red Bro Idle 1" translatesAutoresizingMaskIntoConstraints="NO" id="tHI-sT-WuB">
+                                <rect key="frame" x="29" y="268" width="357" height="327"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -84,13 +114,16 @@
                     <navigationItem key="navigationItem" id="ey9-Yn-YV9"/>
                     <connections>
                         <outlet property="Background" destination="9yA-Fu-zar" id="ru8-IE-Cuv"/>
+                        <outlet property="BlueEggButton" destination="Gy1-7t-gWR" id="MQ2-XR-c08"/>
                         <outlet property="Character" destination="tHI-sT-WuB" id="Ue4-N4-oz5"/>
                         <outlet property="MainImage" destination="tHI-sT-WuB" id="vnf-pI-H4t"/>
+                        <outlet property="RedEggButton" destination="JGp-tr-0Ot" id="jDV-E4-hut"/>
+                        <outlet property="YellowEggButton" destination="UuC-bL-9Qw" id="fie-bL-yvb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-93" y="40"/>
+            <point key="canvasLocation" x="-94.20289855072464" y="39.508928571428569"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gtd-jV-8kC">
@@ -104,18 +137,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue Egg 1" translatesAutoresizingMaskIntoConstraints="NO" id="Ysf-Oh-T6l">
-                                <rect key="frame" x="87" y="354" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red Egg 1" translatesAutoresizingMaskIntoConstraints="NO" id="Gpx-al-dr6">
-                                <rect key="frame" x="87" y="218" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Yellow Egg 1" translatesAutoresizingMaskIntoConstraints="NO" id="Ak9-jr-PbD">
-                                <rect key="frame" x="87" y="490" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="44q-MD-5QT"/>
@@ -131,11 +152,11 @@
     <resources>
         <image name="Blue Egg 1" width="236" height="285"/>
         <image name="Brogatchi Background" width="1170" height="2532"/>
+        <image name="Brogatchi Logo" width="1000" height="1000"/>
         <image name="Button 1 Cropped" width="285" height="285"/>
         <image name="Button 2 Cropped" width="285" height="285"/>
         <image name="Button 3 Cropped" width="285" height="285"/>
         <image name="Button 4 Cropped" width="285" height="285"/>
-        <image name="Home Background" width="1170" height="2532"/>
         <image name="Red Bro Idle 1" width="1000" height="1000"/>
         <image name="Red Egg 1" width="236" height="285"/>
         <image name="Yellow Egg 1" width="236" height="285"/>

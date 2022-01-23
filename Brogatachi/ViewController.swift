@@ -11,6 +11,14 @@ import AVFoundation
 class ViewController: UIViewController {
 
     @IBOutlet weak var MainImage: UIImageView!
+    @IBOutlet weak var Character: UIImageView!
+    @IBOutlet weak var Background: UIImageView!
+    @IBOutlet weak var BlueEggButton: UIButton!
+    @IBOutlet weak var RedEggButton: UIButton!
+    @IBOutlet weak var YellowEggButton: UIButton!
+    
+    
+    
     var timeShifter = 0
     var tapShifter = 0
     
@@ -18,19 +26,45 @@ class ViewController: UIViewController {
     var timer = Timer()
     
     var characterColor = "Red"
+    //characterColor MUST become RedEgg
     var backgroundImage = "Home"
     
-    @IBOutlet weak var Character: UIImageView!
-    @IBOutlet weak var Background: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        playSound(file: "song1")
+
+    }
+    
+    
+    
+    @IBAction func BlueEggPressed(_ sender: Any) {
+        eggToNorm(color: "Blue")
+    }
+    
+    @IBAction func RedEggPressed(_ sender: Any) {
+        eggToNorm(color: "Red")
+    }
+    
+    @IBAction func YellowEggPressed(_ sender: Any) {
+        eggToNorm(color: "Yellow")
+    }
+    
+    func eggToNorm(color: String){
+        characterColor = color
+        Character.image = UIImage(named:characterColor + " Bro Idle 1")
+        backgroundImage = "Home"
+        Background.image = UIImage(named:"Home Background")
+        BlueEggButton.isHidden = true
+        RedEggButton.isHidden = true
+        YellowEggButton.isHidden = true
+        Character.isHidden = false
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
-        playSound(a: "song1")
-        
-        
+        player?.stop()
+        playSound(file: "mainLoop")
         
     }
+    
     
     //new function
     @objc func timerAction(){
@@ -55,19 +89,19 @@ class ViewController: UIViewController {
             Character.image = UIImage(named:characterColor + " Bro Idle " + String(tapShifter))
             
         } else if(backgroundImage == "Gym"){
-            Character.image = UIImage(named:characterColor + " Bro Lifting" + String(tapShifter))
+            Character.image = UIImage(named:characterColor + " Bro Lifting " + String(tapShifter))
             
         } else if(backgroundImage == "Kitchen"){
-            Character.image = UIImage(named:characterColor + " Bro Eating" + String(tapShifter))
+            Character.image = UIImage(named:characterColor + " Bro Eating " + String(tapShifter))
             
         } else if (backgroundImage == "Library"){
-            Character.image = UIImage(named:characterColor + " Bro Reading" + String(tapShifter))
+            Character.image = UIImage(named:characterColor + " Bro Reading " + String(tapShifter))
             
         }
     }
     
-    func playSound(a: String) {
-        guard let url = Bundle.main.url(forResource: a, withExtension: "wav") else { return }
+    func playSound(file: String) {
+        guard let url = Bundle.main.url(forResource: file, withExtension: "wav") else { return }
 
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)

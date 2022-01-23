@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var MainImage: UIImageView!
     var timeShifter = 0
+    var tapShifter = 0
     
     var player: AVAudioPlayer?
     var timer = Timer()
@@ -42,6 +43,29 @@ class ViewController: UIViewController {
             }
         }
 
+    func tapShift(){
+        if(tapShifter < 2){
+            tapShifter += 1
+        } else{
+            tapShifter = 0
+            
+        }
+        
+        if(backgroundImage == "Home"){
+            Character.image = UIImage(named:characterColor + " Bro Idle " + String(tapShifter))
+            
+        } else if(backgroundImage == "Gym"){
+            Character.image = UIImage(named:characterColor + " Bro Lifting" + String(tapShifter))
+            
+        } else if(backgroundImage == "Kitchen"){
+            Character.image = UIImage(named:characterColor + " Bro Eating" + String(tapShifter))
+            
+        } else if (backgroundImage == "Library"){
+            Character.image = UIImage(named:characterColor + " Bro Reading" + String(tapShifter))
+            
+        }
+    }
+    
     func playSound(a: String) {
         guard let url = Bundle.main.url(forResource: a, withExtension: "wav") else { return }
 

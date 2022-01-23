@@ -11,7 +11,8 @@ import AVFoundation
 class ViewController: UIViewController {
 
     @IBOutlet weak var MainImage: UIImageView!
-    var shifter = 0
+    var timeShifter = 0
+    
     var player: AVAudioPlayer?
     var timer = Timer()
     
@@ -32,12 +33,12 @@ class ViewController: UIViewController {
     
     //new function
     @objc func timerAction(){
-            if(shifter == 0 && backgroundImage == "Home"){
-                shifter = 1
+            if(timeShifter == 0 && backgroundImage == "Home"){
+                timeShifter = 1
                 Character.image = UIImage(named:characterColor + " Bro Idle 2")
             } else if(backgroundImage == "Home"){
-                shifter = 0
-                Character.image = UIImage(named:characterColor + " Bro Idle 2")
+                timeShifter = 0
+                Character.image = UIImage(named:characterColor + " Bro Idle 1")
             }
         }
 

@@ -18,25 +18,41 @@ class ViewController: UIViewController {
     @IBOutlet weak var YellowEggButton: UIButton!
     @IBOutlet weak var HatchTipLabel: UILabel!
     
+    @IBOutlet weak var FoodButton: UIButton!
+    @IBOutlet weak var BookButton: UIButton!
+    @IBOutlet weak var GymButton: UIButton!
+    @IBOutlet weak var HomeButton: UIButton!
     
     
     var timeShifter = 0
     var tapShifter = 1
     
-    var player: AVAudioPlayer?
+    var gymStat = 0.0
+    var bookStat = 0.0
+    var foodStat = 0.0
+    var restStat = 0.0
+    
+    var backgroundPlayer: AVAudioPlayer?
     var effectPlayer: AVAudioPlayer?
     var timer = Timer()
     var tapCount = 0
     var isEgging = false
+    var canChangeLocation = false
     
     var characterColor = "Red"
     //characterColor MUST become RedEgg
     var backgroundImage = "Home"
     
     override func viewDidLoad() {
+        FoodButton.alpha = 0.4
+        BookButton.alpha = 0.4
+        GymButton.alpha = 0.4
+        HomeButton.alpha = 0.4
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        playSound(file: "song1")
+        //playSound(file: "song1")
+        playBackgroundMusic(filenamed: "song1")
 
     }
     
@@ -101,55 +117,101 @@ class ViewController: UIViewController {
     
     
     func eggToNorm(){
+        FoodButton.alpha = 1
+        BookButton.alpha = 1
+        GymButton.alpha = 1
+        HomeButton.alpha = 1
         isEgging = false
+        canChangeLocation = true
         HatchTipLabel.isHidden = true
         Character.image = UIImage(named:characterColor + " Bro Idle 1")
         backgroundImage = "Home"
         Background.image = UIImage(named:"Home Background")
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
-        player?.stop()
-        playSound(file: "mainLoop")
+        //player?.stop()
+        backgroundPlayer?.stop()
+        //playSound(file: "mainLoop")
+        playBackgroundMusic(filenamed: "mainLoop")
         
     }
     
     
-    //new function
     @objc func timerAction(){
-            if(timeShifter == 0 && backgroundImage == "Home"){
+        
+        if(backgroundImage == "Home"){
+            if(timeShifter == 0){
                 timeShifter = 1
                 Character.image = UIImage(named:characterColor + " Bro Idle 2")
-            } else if(backgroundImage == "Home"){
+            } else{
                 timeShifter = 0
                 Character.image = UIImage(named:characterColor + " Bro Idle 1")
             }
+            
+            restStat += 1
+            gymStat -= 0.1
+            foodStat -= 0.1
+            bookStat -= 0.1
+            
         }
+    }
 
     func tapShift(){
-        print("tapShift")
-        print(backgroundImage)
         if(tapShifter < 3){
             tapShifter += 1
         } else{
             tapShifter = 1
-            
         }
         
         if(backgroundImage == "Home"){
-            Character.image = UIImage(named:characterColor + " Bro Idle " + String(tapShifter))
+            //PETTING
+            Character.image = UIImage(named:characterColor + " Bro Pet")
+            restStat += 0.1
             
         } else if(backgroundImage == "Gym"){
+            gymStat += 2
+            foodStat -= 0.4
+            bookStat -= 0.75
+            restStat -= 0.25
             Character.image = UIImage(named:characterColor + " Bro Lifting " + String(tapShifter))
             
         } else if(backgroundImage == "Kitchen"){
+            gymStat -= 0.75
+            foodStat += 1.5
+            bookStat -= 0.75
+            restStat -= 0.25
             Character.image = UIImage(named:characterColor + " Bro Eating " + String(tapShifter))
             
         } else if (backgroundImage == "Library"){
+            gymStat -= 0.75
+            foodStat -= 0.4
+            bookStat += 3
+            restStat -= 0.25
             Character.image = UIImage(named:characterColor + " Bro Reading " + String(tapShifter))
             
         }
     }
+    func playBackgroundMusic(filenamed: String){
+
+            let url = Bundle.main.url(forResource: filenamed, withExtension: ".wav")
+            guard let newUrl = url else{
+
+                print ("Could not find file called (filenamed)")
+                return
+            }
+            do {
+
+                backgroundPlayer = try AVAudioPlayer(contentsOf: newUrl)
+                backgroundPlayer?.numberOfLoops = -1
+                backgroundPlayer?.prepareToPlay()
+                backgroundPlayer?.play()
+            }
+            catch let error as NSError {
+                print (error.description)
+
+            }
+        }
     
-    func playSound(file: String) {
+  /*  func playSound(file: String) {
         guard let url = Bundle.main.url(forResource: file, withExtension: "wav") else { return }
 
         do {
@@ -169,7 +231,7 @@ class ViewController: UIViewController {
         } catch let error {
             print(error.localizedDescription)
         }
-    }
+    }*/
     
     func playSoundEffect(file: String) {
         guard let url = Bundle.main.url(forResource: file, withExtension: "wav") else { return }
@@ -197,25 +259,34 @@ class ViewController: UIViewController {
     
 
     @IBAction func HomeButtomPressed(_ sender: Any) {
-        backgroundImage = "Home"
-        Character.image = UIImage(named:characterColor + " Bro Idle 1")
-        Background.image = UIImage(named:"Home Background")
+        if(canChangeLocation){
+            backgroundImage = "Home"
+            Character.image = UIImage(named:characterColor + " Bro Idle 1")
+            Background.image = UIImage(named:"Home Background")
+        }
     }
     @IBAction func GymButtonPressed(_ sender: Any) {
-        backgroundImage = "Gym"
-        Character.image = UIImage(named:characterColor + " Bro Lifting 1")
-        Background.image = UIImage(named:"Gym Background")
+        if(canChangeLocation){
+            backgroundImage = "Gym"
+            Character.image = UIImage(named:characterColor + " Bro Lifting 1")
+            Background.image = UIImage(named:"Gym Background")
+        }
     }
     
     @IBAction func FoodButtonPressed(_ sender: Any) {
-        backgroundImage = "Kitchen"
-        Character.image = UIImage(named:characterColor + " Bro Eating 1")
-        Background.image = UIImage(named:"Kitchen Background")
+        if(canChangeLocation){
+            backgroundImage = "Kitchen"
+            Character.image = UIImage(named:characterColor + " Bro Eating 1")
+            Background.image = UIImage(named:"Kitchen Background")
+        }
+
     }
     @IBAction func LibraryButtonPressed(_ sender: Any) {
-        backgroundImage = "Library"
-        Character.image = UIImage(named:characterColor + " Bro Reading 1")
-        Background.image = UIImage(named:"Library Background")
+        if(canChangeLocation){
+            backgroundImage = "Library"
+            Character.image = UIImage(named:characterColor + " Bro Reading 1")
+            Background.image = UIImage(named:"Library Background")
+        }
     }
 }
 

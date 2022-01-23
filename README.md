@@ -8,9 +8,12 @@ resting, and most importantly, getting swole. Be careful not to do the same thin
 Best of luck to raising your new pet!
 
 Sincerely,
+
 Blake Branvold, Nazrin Nazarudin, Ian Gregory, and Ryan Thomas
 
 
 This is our entry for spring CORNHACKS 2022
+
 Made with Swift in Xcode 
+
 Optimized for iPhone 13 or similar sizes

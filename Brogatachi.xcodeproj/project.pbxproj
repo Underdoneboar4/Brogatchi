@@ -19,6 +19,18 @@
 		414F4030279C8E3C00CD810B /* BrogatachiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F402F279C8E3C00CD810B /* BrogatachiUITestsLaunchTests.swift */; };
 		4167ACB9279CB460000CDC0E /* piwefhipfhwe.png in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACB8279CB460000CDC0E /* piwefhipfhwe.png */; };
 		4167ACBB279CB491000CDC0E /* obabo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACBA279CB491000CDC0E /* obabo.png */; };
+		4167ACCD279CDB00000CDC0E /* song1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACCC279CDB00000CDC0E /* song1.wav */; };
+		4167ACCE279CDB00000CDC0E /* song1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACCC279CDB00000CDC0E /* song1.wav */; };
+		4167ACCF279CDB00000CDC0E /* song1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACCC279CDB00000CDC0E /* song1.wav */; };
+		4167ACD1279CDB18000CDC0E /* crack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD0279CDB18000CDC0E /* crack.wav */; };
+		4167ACD2279CDB18000CDC0E /* crack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD0279CDB18000CDC0E /* crack.wav */; };
+		4167ACD3279CDB18000CDC0E /* crack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD0279CDB18000CDC0E /* crack.wav */; };
+		4167ACD5279CDBEA000CDC0E /* tap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD4279CDBEA000CDC0E /* tap.wav */; };
+		4167ACD6279CDBEA000CDC0E /* tap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD4279CDBEA000CDC0E /* tap.wav */; };
+		4167ACD7279CDBEA000CDC0E /* tap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD4279CDBEA000CDC0E /* tap.wav */; };
+		4167ACD9279CDCF0000CDC0E /* tapShort.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD8279CDCEF000CDC0E /* tapShort.wav */; };
+		4167ACDA279CDCF0000CDC0E /* tapShort.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD8279CDCEF000CDC0E /* tapShort.wav */; };
+		4167ACDB279CDCF0000CDC0E /* tapShort.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4167ACD8279CDCEF000CDC0E /* tapShort.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +67,10 @@
 		414F402F279C8E3C00CD810B /* BrogatachiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrogatachiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4167ACB8279CB460000CDC0E /* piwefhipfhwe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piwefhipfhwe.png; sourceTree = "<group>"; };
 		4167ACBA279CB491000CDC0E /* obabo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obabo.png; sourceTree = "<group>"; };
+		4167ACCC279CDB00000CDC0E /* song1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = song1.wav; sourceTree = "<group>"; };
+		4167ACD0279CDB18000CDC0E /* crack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crack.wav; sourceTree = "<group>"; };
+		4167ACD4279CDBEA000CDC0E /* tap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tap.wav; sourceTree = "<group>"; };
+		4167ACD8279CDCEF000CDC0E /* tapShort.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tapShort.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +128,10 @@
 				414F4012279C8E3B00CD810B /* Main.storyboard */,
 				414F4015279C8E3C00CD810B /* Assets.xcassets */,
 				414F4017279C8E3C00CD810B /* LaunchScreen.storyboard */,
+				4167ACCC279CDB00000CDC0E /* song1.wav */,
+				4167ACD0279CDB18000CDC0E /* crack.wav */,
+				4167ACD4279CDBEA000CDC0E /* tap.wav */,
+				4167ACD8279CDCEF000CDC0E /* tapShort.wav */,
 				414F401A279C8E3C00CD810B /* Info.plist */,
 			);
 			path = Brogatachi;
@@ -240,8 +260,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4167ACD5279CDBEA000CDC0E /* tap.wav in Resources */,
 				414F4019279C8E3C00CD810B /* LaunchScreen.storyboard in Resources */,
+				4167ACCD279CDB00000CDC0E /* song1.wav in Resources */,
+				4167ACD1279CDB18000CDC0E /* crack.wav in Resources */,
 				414F4016279C8E3C00CD810B /* Assets.xcassets in Resources */,
+				4167ACD9279CDCF0000CDC0E /* tapShort.wav in Resources */,
 				414F4014279C8E3B00CD810B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +274,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4167ACD6279CDBEA000CDC0E /* tap.wav in Resources */,
+				4167ACDA279CDCF0000CDC0E /* tapShort.wav in Resources */,
+				4167ACCE279CDB00000CDC0E /* song1.wav in Resources */,
+				4167ACD2279CDB18000CDC0E /* crack.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4167ACB9279CB460000CDC0E /* piwefhipfhwe.png in Resources */,
+				4167ACD3279CDB18000CDC0E /* crack.wav in Resources */,
+				4167ACCF279CDB00000CDC0E /* song1.wav in Resources */,
 				4167ACBB279CB491000CDC0E /* obabo.png in Resources */,
+				4167ACD7279CDBEA000CDC0E /* tap.wav in Resources */,
+				4167ACDB279CDCF0000CDC0E /* tapShort.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

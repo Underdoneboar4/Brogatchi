@@ -158,6 +158,14 @@ class ViewController: UIViewController {
                 restStat = 100
             }
             
+        } else{
+            restStat -= 0.001
+            gymStat -= 0.001
+            foodStat -= 0.001
+            bookStat -= 0.001
+            if(restStat > 100){
+                restStat = 100
+            }
         }
     }
 

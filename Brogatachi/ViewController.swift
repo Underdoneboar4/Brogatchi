@@ -138,6 +138,7 @@ class ViewController: UIViewController {
     
     @objc func timerAction(){
         
+        
         if(backgroundImage == "Home"){
             if(timeShifter == 0){
                 timeShifter = 1
@@ -151,6 +152,10 @@ class ViewController: UIViewController {
             gymStat -= 0.1
             foodStat -= 0.1
             bookStat -= 0.1
+            
+            if(restStat > 100){
+                restStat = 100
+            }
             
         }
     }
@@ -172,6 +177,9 @@ class ViewController: UIViewController {
             foodStat -= 0.4
             bookStat -= 0.75
             restStat -= 0.25
+            if(gymStat > 100){
+                gymStat = 100
+            }
             Character.image = UIImage(named:characterColor + " Bro Lifting " + String(tapShifter))
             
         } else if(backgroundImage == "Kitchen"){
@@ -179,6 +187,9 @@ class ViewController: UIViewController {
             foodStat += 1.5
             bookStat -= 0.75
             restStat -= 0.25
+            if(foodStat > 100){
+                foodStat = 100
+            }
             Character.image = UIImage(named:characterColor + " Bro Eating " + String(tapShifter))
             
         } else if (backgroundImage == "Library"){
@@ -186,6 +197,9 @@ class ViewController: UIViewController {
             foodStat -= 0.4
             bookStat += 3
             restStat -= 0.25
+            if(bookStat > 100){
+                bookStat = 100
+            }
             Character.image = UIImage(named:characterColor + " Bro Reading " + String(tapShifter))
             
         }
@@ -210,28 +224,6 @@ class ViewController: UIViewController {
 
             }
         }
-    
-  /*  func playSound(file: String) {
-        guard let url = Bundle.main.url(forResource: file, withExtension: "wav") else { return }
-
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
-
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-
-            /* iOS 10 and earlier require the following line:
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
-
-            guard let player = player else { return }
-
-            player.play()
-
-        } catch let error {
-            print(error.localizedDescription)
-        }
-    }*/
     
     func playSoundEffect(file: String) {
         guard let url = Bundle.main.url(forResource: file, withExtension: "wav") else { return }

@@ -127,15 +127,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Blue Egg 1" width="1000" height="1000"/>
+        <image name="Blue Egg 1" width="236" height="285"/>
         <image name="Brogatchi Background" width="1170" height="2532"/>
         <image name="Button 1 Cropped" width="285" height="285"/>
         <image name="Button 2 Cropped" width="285" height="285"/>
         <image name="Button 3 Cropped" width="285" height="285"/>
         <image name="Button 4 Cropped" width="285" height="285"/>
         <image name="Red Bro Idle 1" width="1000" height="1000"/>
-        <image name="Red Egg 1" width="1000" height="1000"/>
-        <image name="Yellow Egg 1" width="1000" height="1000"/>
+        <image name="Red Egg 1" width="236" height="285"/>
+        <image name="Yellow Egg 1" width="236" height="285"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

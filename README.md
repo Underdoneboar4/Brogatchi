@@ -12,8 +12,10 @@ Sincerely,
 Blake Branvold, Nazrin Nazarudin, Ian Gregory, and Ryan Thomas
 
 
+
+
 This is our entry for spring CORNHACKS 2022
 
-Made with Swift in Xcode 
 
+Made with Swift in Xcode 
 Optimized for iPhone 13 or similar sizes
